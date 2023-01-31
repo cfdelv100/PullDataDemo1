@@ -21,7 +21,7 @@ final_data_directory = {
     'Artist': []
 }
 
-PLAYLIST  = 'rap_caviar'
+PLAYLIST = 'rap_caviar'
 
 
 # For every artist we search for
@@ -60,7 +60,6 @@ def gather_data_local():
         return final_data_directory
 
 
-
 def gather_data():
     # For every arist we are looking for
     with open("/tmp/rapcaviar_albums.csv", 'w') as file:
@@ -97,13 +96,7 @@ def lambda_handler(event, context):
     gather_data()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-   data = gather_data_local()
+    data = gather_data_local()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
