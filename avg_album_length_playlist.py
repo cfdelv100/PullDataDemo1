@@ -92,13 +92,13 @@ def gather_data():
 
 # takes in two arguments to run data
 def lambda_handler(event, context):
-    gather_data_local()
-    # gather_data()
+    # gather_data_local()
+    gather_data()
 
 
 if __name__ == '__main__':
-    data = gather_data_local()
-    # data = gather_data()
+    # data = gather_data_local()
+    data = gather_data()
 
     # Reserved for s3 and lambda deployment in AWS main.
 
